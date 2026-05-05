@@ -7,7 +7,7 @@ import sys
 import jieba
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from config import INDEX_DIR, BM25_TOP_K
+from config import INDEX_DIR, BM25_TOP_K, DEVICE
 
 _bm25 = None
 _chunk_ids = None
@@ -64,7 +64,7 @@ def keyword_search(query: str, top_k: int = BM25_TOP_K) -> list[dict]:
     if len(results) > 5:
         from retrieval.reranker import rerank
         passages = [r["text"] for r in results]
-        reranked = rerank(query, passages, top_k=5)
+        reranked = rerank(query, passages, top_k=5, device=DEVICE)
         results = [results[idx] for idx, _ in reranked]
 
     return results

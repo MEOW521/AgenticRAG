@@ -1,0 +1,2798 @@
+{
+  "summary": {
+    "num_samples": 92,
+    "input_format": "multihop_export_or_flat",
+    "metrics": {
+      "em": 0.2717391304347826,
+      "f1": 0.33695652173913043,
+      "hit_at_k": 0.7282608695652174,
+      "avg_tool_calls": 1.0,
+      "avg_latency_sec": 1.1204225809677788
+    },
+    "by_subset": {
+      "2hop_comparison": {
+        "n": 70,
+        "em": 0.3142857142857143,
+        "f1": 0.35158730158730156,
+        "hit_at_k": 0.7
+      },
+      "2hop_inference": {
+        "n": 19,
+        "em": 0.05263157894736842,
+        "f1": 0.2309941520467836,
+        "hit_at_k": 0.7894736842105263
+      },
+      "3hop_comparison": {
+        "n": 3,
+        "em": 0.6666666666666666,
+        "f1": 0.6666666666666666,
+        "hit_at_k": 1.0
+      }
+    }
+  },
+  "predictions": [
+    {
+      "id": "mhop_000000",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "2025年末，惠州市德赛西威汽车电子股份有限公司与福耀玻璃工业集团股份有限公司相比，哪家公司预付款项期末余额排名第一的单位所占比例更高？",
+      "gold_answers_head": [
+        "惠州市德赛西威汽车电子股份有限公司",
+        "德赛西威",
+        "SV Auto"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1728",
+        "chunk_2161"
+      ],
+      "pred_answer": "惠州市德赛西威汽车电子股份有限公司",
+      "pred_chunk_ids": [
+        "chunk_2161",
+        "chunk_1602",
+        "chunk_1641",
+        "chunk_2133",
+        "chunk_1610"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 8.949352502822876,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000001",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年度，长城汽车股份有限公司与重庆长安汽车股份有限公司相比，哪家公司的存货跌价准备期末余额合计更高？",
+      "gold_answers_head": [
+        "重庆长安汽车股份有限公司",
+        "长安汽车",
+        "长安汽车股份"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2932",
+        "chunk_813"
+      ],
+      "pred_answer": "提供的上下文中未包含“长城汽车股份有限公司”的任何财务数据，因此无法根据给定信息进行比较。",
+      "pred_chunk_ids": [
+        "chunk_965",
+        "chunk_950",
+        "chunk_819",
+        "chunk_966",
+        "chunk_939"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 1.2450273036956787,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000002",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "长城汽车在2021年7月22日授予的股票期权测算中使用的标的股票收盘价，与2024年1月26日授予的股票期权测算中使用的标的股票收盘价相比，哪一次的股价更高？",
+      "gold_answers_head": [
+        "2021年7月22日",
+        "2021-07-22",
+        "2021/07/22"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2472",
+        "chunk_2484"
+      ],
+      "pred_answer": "2024 年 1 月 26 日",
+      "pred_chunk_ids": [
+        "chunk_2484",
+        "chunk_2916",
+        "chunk_2473",
+        "chunk_2485",
+        "chunk_2470"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.0481367111206055,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000003",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年年度报告中，重庆长安汽车股份有限公司与比亚迪集团对政府补助的会计核算方法有何不同？请指出哪家公司采用了总额法。",
+      "gold_answers_head": [
+        "比亚迪集团",
+        "比亚迪",
+        "BYD"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_787",
+        "chunk_365"
+      ],
+      "pred_answer": "文中未提及比亚迪集团",
+      "pred_chunk_ids": [
+        "chunk_890",
+        "chunk_745",
+        "chunk_939",
+        "chunk_529",
+        "chunk_950"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 1.0308992862701416,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000004",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "截至2025年12月31日，长城汽车集团与重庆长安汽车股份有限公司在短期借款方面的未折现合同义务金额（或合计金额）相比，哪一家公司的数值更高？",
+      "gold_answers_head": [
+        "长城汽车集团",
+        "长城汽车",
+        "长城集团"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2885",
+        "chunk_893"
+      ],
+      "pred_answer": "长城汽车股份有限公司",
+      "pred_chunk_ids": [
+        "chunk_2931",
+        "chunk_895",
+        "chunk_965",
+        "chunk_939",
+        "chunk_838"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 1.0132355690002441,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000005",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在长城汽车2025年年度报告中，培训总时数最高的董事与赵国庆先生相比，谁截至2025年12月31日按照《证券及期货条例》被视为拥有的本公司A股股份权益更多？",
+      "gold_answers_head": [
+        "赵国庆",
+        "Zhao Guoqing",
+        "Guoqing Zhao"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2533",
+        "chunk_2598"
+      ],
+      "pred_answer": "赵国庆",
+      "pred_chunk_ids": [
+        "chunk_2597",
+        "chunk_2598",
+        "chunk_2415",
+        "chunk_2414",
+        "chunk_2419"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9425938129425049,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000006",
+      "subset": "3hop_comparison",
+      "hop_count": 3,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在长城汽车2025年年度报告中，截至2025年12月31日按照《证券及期货条例》被视为拥有本公司A股股份权益更多的董事（即赵国庆），与董事长魏建军相比，谁在2025年度获得的股份支付金额更高？",
+      "gold_answers_head": [
+        "魏建军",
+        "Wei Jianjun",
+        "Jianjun Wei"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2533",
+        "chunk_2598",
+        "chunk_2414"
+      ],
+      "pred_answer": "魏建军",
+      "pred_chunk_ids": [
+        "chunk_2415",
+        "chunk_2597",
+        "chunk_2414",
+        "chunk_2598",
+        "chunk_2419"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9178102016448975,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000007",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "长城汽车2020年董事会审议通过的A股可转换公司债券募集资金总额上限与2021年实际发行的可转债总额相比，哪一个数值更高？",
+      "gold_answers_head": [
+        "2020年董事会审议通过的募集资金总额上限",
+        "2020年董事会批准的募资上限",
+        "2020年董事会核准的募集资金最高额度"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2603",
+        "chunk_2582"
+      ],
+      "pred_answer": "2021 年实际发行的可转债总额",
+      "pred_chunk_ids": [
+        "chunk_2604",
+        "chunk_2605",
+        "chunk_2582",
+        "chunk_2817",
+        "chunk_2603"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9875133037567139,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000008",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年年度报告中，比亚迪与重庆长安汽车相比，哪家公司在报告期末拥有更高的资产负债率？",
+      "gold_answers_head": [
+        "比亚迪",
+        "BYD",
+        "Build Your Dreams"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_292",
+        "chunk_685"
+      ],
+      "pred_answer": "文中未提及",
+      "pred_chunk_ids": [
+        "chunk_950",
+        "chunk_942",
+        "chunk_589",
+        "chunk_838",
+        "chunk_578"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 0.8986866474151611,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000009",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在长城汽车2025年员工持股计划中，穆峰先生与赵国庆先生谁获分配的份额数量更多？",
+      "gold_answers_head": [
+        "穆峰先生",
+        "穆峰",
+        "Mr. Mu Feng"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2600",
+        "chunk_2416"
+      ],
+      "pred_answer": "赵国庆先生",
+      "pred_chunk_ids": [
+        "chunk_2415",
+        "chunk_2596",
+        "chunk_2598",
+        "chunk_2600",
+        "chunk_2418"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.0269801616668701,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000010",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年12月31日，长城汽车股份有限公司与重庆长安汽车股份有限公司相比，哪一家公司的经审计抵销后递延所得税资产余额更高？",
+      "gold_answers_head": [
+        "长城汽车股份有限公司",
+        "长城汽车",
+        "长城汽车公司"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2799",
+        "chunk_842"
+      ],
+      "pred_answer": "长城汽车股份有限公司",
+      "pred_chunk_ids": [
+        "chunk_2931",
+        "chunk_840",
+        "chunk_842",
+        "chunk_939",
+        "chunk_819"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9866931438446045,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000011",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年年度报告中，长城汽车股份有限公司与重庆长安汽车股份有限公司相比，哪家公司披露的递延所得税资产和负债互抵金额更高？",
+      "gold_answers_head": [
+        "长城汽车股份有限公司",
+        "长城汽车",
+        "长城汽车公司"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2799",
+        "chunk_842"
+      ],
+      "pred_answer": "上下文未提供长城汽车数据",
+      "pred_chunk_ids": [
+        "chunk_840",
+        "chunk_842",
+        "chunk_939",
+        "chunk_925",
+        "chunk_2799"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.117194652557373,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000012",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "在首次公开发行或再融资时，作出关于填补被摊薄即期回报措施承诺的德赛集团，若其控制的企业从事的业务与德赛西威构成竞争，同意以何种方式处理该等业务？",
+      "gold_answers_head": [
+        "交由德赛西威以合理价格收购，或转让给无关联关系的第三方",
+        "由德赛西威按公允价格收购，或出售给独立第三方",
+        "德赛西威以合理对价收购，或转让给非关联方"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1554",
+        "chunk_1539"
+      ],
+      "pred_answer": "以合理价格收购或转让给无关联关系的第三方",
+      "pred_chunk_ids": [
+        "chunk_1539",
+        "chunk_1550",
+        "chunk_1555",
+        "chunk_1545",
+        "chunk_1553"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.1899311542510986,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000013",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "宁德时代与惠州市德赛西威汽车电子股份有限公司相比，哪家公司更早披露其2025年度内部控制评价报告全文？",
+      "gold_answers_head": [
+        "惠州市德赛西威汽车电子股份有限公司",
+        "德赛西威",
+        "SV Auto"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1105",
+        "chunk_1532"
+      ],
+      "pred_answer": "惠州市德赛西威汽车电子股份有限公司",
+      "pred_chunk_ids": [
+        "chunk_1102",
+        "chunk_1437",
+        "chunk_1108",
+        "chunk_1491",
+        "chunk_1414"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 0.914905309677124,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000014",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年度内部控制评价中，宁德时代与比亚迪哪家公司纳入评价范围的单位资产总额占公司合并财务报表资产总额的比例更高？",
+      "gold_answers_head": [
+        "宁德时代",
+        "CATL",
+        "宁德新能源"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1105",
+        "chunk_182"
+      ],
+      "pred_answer": "文中未提供数据",
+      "pred_chunk_ids": [
+        "chunk_1186",
+        "chunk_421",
+        "chunk_473",
+        "chunk_1108",
+        "chunk_1036"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 0.8558228015899658,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000015",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "截至2025年12月31日，长城汽车股份有限公司的银行承兑汇票余额与重庆长安汽车股份有限公司持有的银行承兑汇票账面余额相比，哪家公司的金额更高？",
+      "gold_answers_head": [
+        "长城汽车股份有限公司",
+        "长城汽车",
+        "长城汽车股份"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2804",
+        "chunk_801"
+      ],
+      "pred_answer": "无法回答",
+      "pred_chunk_ids": [
+        "chunk_942",
+        "chunk_950",
+        "chunk_2931",
+        "chunk_939",
+        "chunk_965"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 0.9403665065765381,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000016",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年度，重庆长安汽车股份有限公司与长城汽车股份有限公司相比，哪家公司的递延所得税费用数值更小（即负值绝对值更大或代数值更小）？",
+      "gold_answers_head": [
+        "长城汽车股份有限公司",
+        "长城汽车",
+        "长城汽车公司"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_870",
+        "chunk_2966"
+      ],
+      "pred_answer": "上下文未提供长城汽车股份有限公司数据",
+      "pred_chunk_ids": [
+        "chunk_939",
+        "chunk_925",
+        "chunk_840",
+        "chunk_842",
+        "chunk_966"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 0.9874312877655029,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000017",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年度，重庆长安汽车股份有限公司与长城汽车股份有限公司相比，哪家公司的消费税金额更高？",
+      "gold_answers_head": [
+        "长城汽车股份有限公司",
+        "长城汽车",
+        "长城股份"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_864",
+        "chunk_2832"
+      ],
+      "pred_answer": "上下文未提供长城汽车数据",
+      "pred_chunk_ids": [
+        "chunk_939",
+        "chunk_965",
+        "chunk_864",
+        "chunk_817",
+        "chunk_2832"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9953553676605225,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000018",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在惠州市德赛西威汽车电子股份有限公司2025年年度报告中，经营活动产生的现金流量净额与投资活动产生的现金流量净额相比，哪一项的数值更大（即代数数值更高或更接近正无穷）？",
+      "gold_answers_head": [
+        "经营活动产生的现金流量净额",
+        "经营活动现金净流量",
+        "经营现金流净额"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1620",
+        "chunk_1786"
+      ],
+      "pred_answer": "经营活动产生的现金流量净额",
+      "pred_chunk_ids": [
+        "chunk_577",
+        "chunk_1474",
+        "chunk_1029",
+        "chunk_96",
+        "chunk_1621"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 1.019472599029541,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000019",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在德赛西威2025年年度报告中，公司吸收投资收到的现金总额与向特定对象发行股票的实际募集资金净额相比，哪个数值更高？",
+      "gold_answers_head": [
+        "吸收投资收到的现金总额",
+        "吸收投资收到的现金",
+        "吸收权益性投资收到的现金"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1620",
+        "chunk_1575"
+      ],
+      "pred_answer": "向特定对象发行股票的实际募集资金净额",
+      "pred_chunk_ids": [
+        "chunk_1581",
+        "chunk_1582",
+        "chunk_1621",
+        "chunk_1576",
+        "chunk_1575"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.0469505786895752,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000020",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "周佳担任上汽时代动力电池系统有限公司副董事长的起始时间，与他开始担任宁德时代副董事长的时间相比，哪个更早？",
+      "gold_answers_head": [
+        "担任上汽时代动力电池系统有限公司副董事长",
+        "任上汽时代动力电池系统有限公司副董事长",
+        "出任上汽时代动力电池系统有限公司副董事长"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1076",
+        "chunk_1066"
+      ],
+      "pred_answer": "上汽时代动力电池系统有限公司",
+      "pred_chunk_ids": [
+        "chunk_1076",
+        "chunk_1066",
+        "chunk_1061",
+        "chunk_1064",
+        "chunk_1071"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9382758140563965,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000021",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "根据中汽协预测，2026年我国新能源汽车的预计销量与2025年我国新能源汽车的实际产量相比，哪个数值更高？",
+      "gold_answers_head": [
+        "2026年我国新能源汽车的预计销量",
+        "2026年中国新能源汽车预计销量",
+        "2026年国内新能源车预估销量"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2390",
+        "chunk_2332"
+      ],
+      "pred_answer": "2026 年我国新能源汽车的预计销量",
+      "pred_chunk_ids": [
+        "chunk_2390",
+        "chunk_2332",
+        "chunk_995",
+        "chunk_2334",
+        "chunk_1449"
+      ],
+      "em": 0.0,
+      "f1": 0.22222222222222224,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9181413650512695,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000022",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "长城汽车在2025年年度报告中拟向全体股东每股派发的现金红利金额，与该公司2024年年度股东大会审议通过的每股分配现金股利金额相比，哪一个更高？",
+      "gold_answers_head": [
+        "2024年年度股东大会审议通过的每股分配现金股利金额更高",
+        "2024年年度股东会批准的每股现金分红更高",
+        "2024年股东年会通过的每股派现金额增加"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2394",
+        "chunk_2444"
+      ],
+      "pred_answer": "2024 年年度股东大会审议通过的每股分配现金股利金额",
+      "pred_chunk_ids": [
+        "chunk_2444",
+        "chunk_2828",
+        "chunk_2917",
+        "chunk_2394",
+        "chunk_610"
+      ],
+      "em": 0.0,
+      "f1": 0.22222222222222224,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.012683629989624,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000023",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "福耀玻璃向福建省耀华工业村开发有限公司租赁房产的期限，与福耀欧洲玻璃有限公司承租德国厂房的期限相比，哪一个更长？",
+      "gold_answers_head": [
+        "福耀欧洲玻璃有限公司承租德国厂房的期限",
+        "福耀欧洲租赁德国厂房租期",
+        "福耀欧洲德国工厂租赁期限"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2021",
+        "chunk_2013"
+      ],
+      "pred_answer": "福耀欧洲玻璃有限公司承租德国厂房的期限",
+      "pred_chunk_ids": [
+        "chunk_2013",
+        "chunk_2021",
+        "chunk_2024",
+        "chunk_2020",
+        "chunk_2026"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9398512840270996,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000024",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "在惠州市德赛西威汽车电子股份有限公司2025年年度报告中，被列为“公司对子公司的担保情况”中的担保对象，其对应的持股比例是多少？",
+      "gold_answers_head": [
+        "34.09%",
+        "34.09 percent",
+        "34.09 per cent"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1563",
+        "chunk_1706"
+      ],
+      "pred_answer": "45%",
+      "pred_chunk_ids": [
+        "chunk_1589",
+        "chunk_1797",
+        "chunk_1591",
+        "chunk_1530",
+        "chunk_1565"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 0.8685274124145508,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000025",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年年度报告中，重庆长安汽车股份有限公司与比亚迪股份有限公司作为承租人发生的租赁负债利息费用，哪一家公司的金额更高？",
+      "gold_answers_head": [
+        "重庆长安汽车股份有限公司",
+        "长安汽车",
+        "长安汽车股份有限公司"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_469",
+        "chunk_881"
+      ],
+      "pred_answer": "重庆长安汽车股份有限公司",
+      "pred_chunk_ids": [
+        "chunk_929",
+        "chunk_925",
+        "chunk_498",
+        "chunk_928",
+        "chunk_933"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 1.0045299530029297,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000026",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年，比亚迪股份有限公司与福耀玻璃工业集团股份有限公司相比，哪家公司计入当期损益的采用简化处理的短期租赁费用和低价值资产租赁费用更高？",
+      "gold_answers_head": [
+        "福耀玻璃工业集团股份有限公司",
+        "福耀集团",
+        "福耀玻璃"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_469",
+        "chunk_2243"
+      ],
+      "pred_answer": "无法回答",
+      "pred_chunk_ids": [
+        "chunk_2243",
+        "chunk_2067",
+        "chunk_2212",
+        "chunk_1863",
+        "chunk_1929"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.0379326343536377,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000027",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年，比亚迪股份有限公司与福耀玻璃工业集团股份有限公司相比，哪家公司与租赁相关的总现金流出金额更高？",
+      "gold_answers_head": [
+        "福耀玻璃工业集团股份有限公司",
+        "福耀集团",
+        "福耀玻璃"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_469",
+        "chunk_2243"
+      ],
+      "pred_answer": "提供的上下文中未包含比亚迪股份有限公司的数据，因此无法根据现有信息进行两家公司之间的比较。",
+      "pred_chunk_ids": [
+        "chunk_2243",
+        "chunk_2288",
+        "chunk_2212",
+        "chunk_2067",
+        "chunk_1856"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.0286617279052734,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000028",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年度，长城汽车与重庆长安汽车相比，哪家公司归属于公司普通股股东的加权平均净资产收益率更高？",
+      "gold_answers_head": [
+        "长城汽车",
+        "Great Wall Motor",
+        "GWM"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2979",
+        "chunk_969"
+      ],
+      "pred_answer": "上下文未提供长城汽车数据",
+      "pred_chunk_ids": [
+        "chunk_969",
+        "chunk_534",
+        "chunk_951",
+        "chunk_2980",
+        "chunk_817"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9511127471923828,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000029",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年度，宁德时代与福耀玻璃哪家公司拟用于现金分红及特别现金分红的总额占合并报表归属于上市公司股东的净利润的比例更高？",
+      "gold_answers_head": [
+        "福耀玻璃",
+        "福耀",
+        "福耀集团"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1092",
+        "chunk_1997"
+      ],
+      "pred_answer": "无法回答（文中未提供宁德时代的数据）",
+      "pred_chunk_ids": [
+        "chunk_1880",
+        "chunk_1847",
+        "chunk_1999",
+        "chunk_975",
+        "chunk_1951"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 0.9698436260223389,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000030",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年度，长城汽车与福耀玻璃哪家公司与租赁相关的总现金流出更高？",
+      "gold_answers_head": [
+        "长城汽车",
+        "Great Wall Motor",
+        "GWM"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2792",
+        "chunk_2243"
+      ],
+      "pred_answer": "文中未提及长城汽车",
+      "pred_chunk_ids": [
+        "chunk_2243",
+        "chunk_2212",
+        "chunk_2134",
+        "chunk_2221",
+        "chunk_2288"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9891378879547119,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000031",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "2023年6月担任洛阳栾川钼业集团股份有限公司董事的人士，其所在公司向该公司销售储能电池系统的关联交易预计金额是多少？",
+      "gold_answers_head": [
+        "120,000万元",
+        "12亿元",
+        "12亿"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1078",
+        "chunk_1124"
+      ],
+      "pred_answer": "120,000",
+      "pred_chunk_ids": [
+        "chunk_1124",
+        "chunk_1078",
+        "chunk_1123",
+        "chunk_2563",
+        "chunk_2413"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.0397508144378662,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000032",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年度，福耀玻璃与惠州市德赛西威汽车电子股份有限公司相比，哪家公司的期末现金及现金等价物余额更高？",
+      "gold_answers_head": [
+        "福耀玻璃",
+        "福耀",
+        "福耀集团"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2079",
+        "chunk_1625"
+      ],
+      "pred_answer": "无法判断",
+      "pred_chunk_ids": [
+        "chunk_1786",
+        "chunk_1625",
+        "chunk_1641",
+        "chunk_2237",
+        "chunk_2079"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.0004959106445312,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000033",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年度，福耀玻璃工业集团股份有限公司与比亚迪股份有限公司是否由同一家会计师事务所出具审计报告？如果是，该事务所的名称是什么？",
+      "gold_answers_head": [
+        "是，安永华明会计师事务所（特殊普通合伙）",
+        "是，安永华明",
+        "是，安永"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2050",
+        "chunk_293"
+      ],
+      "pred_answer": "无法回答",
+      "pred_chunk_ids": [
+        "chunk_1845",
+        "chunk_1856",
+        "chunk_1984",
+        "chunk_1990",
+        "chunk_1850"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 1.2707700729370117,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000034",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "长城汽车2025年度实际实现的经审计归属于上市公司股东的净利润，与该公司员工持股计划第二个解除限售期设定的2025年净利润目标相比，哪个数值更高？",
+      "gold_answers_head": [
+        "2025年度实际实现的经审计归属于上市公司股东的净利润",
+        "2025年经审计归母净利润",
+        "2025年度审计后归母净利"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2494",
+        "chunk_2394"
+      ],
+      "pred_answer": "无法判断",
+      "pred_chunk_ids": [
+        "chunk_2507",
+        "chunk_2479",
+        "chunk_2494",
+        "chunk_2320",
+        "chunk_2394"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9355688095092773,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000035",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在长城汽车2025年员工持股计划相关数据中，是受让公司回购A股普通股股票的价格高，还是2026年1月23日非交易过户日前一交易日的A股收市价高？",
+      "gold_answers_head": [
+        "2026年1月23日非交易过户日前一交易日的A股收市价",
+        "2026-01-23非交易过户日前一交易日A股收盘价",
+        "2026/01/23非交易过户日前一交易日A股收盘价格"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2494",
+        "chunk_2509"
+      ],
+      "pred_answer": "受让价格",
+      "pred_chunk_ids": [
+        "chunk_2501",
+        "chunk_2509",
+        "chunk_2504",
+        "chunk_2497",
+        "chunk_2913"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.0872564315795898,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000036",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "福耀玻璃2025年发行的“2025年度第一期超短期融资券”与比亚迪2025年度第一期超短期融资券相比，哪家的票面利率更高？",
+      "gold_answers_head": [
+        "福耀玻璃",
+        "福耀集团",
+        "福耀"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2209",
+        "chunk_436"
+      ],
+      "pred_answer": "福耀玻璃",
+      "pred_chunk_ids": [
+        "chunk_436",
+        "chunk_2209",
+        "chunk_1916",
+        "chunk_2161",
+        "chunk_1923"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.0189759731292725,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000037",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "福耀玻璃于2025年6月17日发行的超短期融资券，在报告期内的付息兑付状态如何？",
+      "gold_answers_head": [
+        "已完成付息兑付",
+        "已付息兑付",
+        "付息兑付完成"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2209",
+        "chunk_2046"
+      ],
+      "pred_answer": "无违约",
+      "pred_chunk_ids": [
+        "chunk_2209",
+        "chunk_1916",
+        "chunk_1918",
+        "chunk_2202",
+        "chunk_1914"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.4910967350006104,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000038",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年度，长城汽车集团与比亚迪集团均针对特定司法管辖区的支柱二法规计提了税收准备金。根据各自的年度报告，哪一家集团计提的准备金金额更高？",
+      "gold_answers_head": [
+        "比亚迪集团",
+        "比亚迪",
+        "BYD"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2844",
+        "chunk_459"
+      ],
+      "pred_answer": "长城汽车集团",
+      "pred_chunk_ids": [
+        "chunk_2844",
+        "chunk_459",
+        "chunk_433",
+        "chunk_2748",
+        "chunk_424"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.0534038543701172,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000039",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "比亚迪第五代DM技术的综合续航里程与大电池DM-i版本车型的综合续航里程相比，哪一款车型的续航数据更高？",
+      "gold_answers_head": [
+        "大电池DM-i版本车型",
+        "DM-i大电池版",
+        "DM-i长续航版"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_79",
+        "chunk_111"
+      ],
+      "pred_answer": "第五代DM技术",
+      "pred_chunk_ids": [
+        "chunk_79",
+        "chunk_39",
+        "chunk_41",
+        "chunk_40",
+        "chunk_111"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9775912761688232,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000040",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年年度报告中，宁德时代与比亚迪用于计算未来现金流现值（或确定资产组可收回金额）的税前折现率相比，哪家公司采用的折现率更高？",
+      "gold_answers_head": [
+        "比亚迪",
+        "BYD",
+        "比亚迪汽车"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1327",
+        "chunk_423"
+      ],
+      "pred_answer": "比亚迪",
+      "pred_chunk_ids": [
+        "chunk_1411",
+        "chunk_1327",
+        "chunk_422",
+        "chunk_1318",
+        "chunk_1297"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9923367500305176,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000041",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "根据注2，属于全球算税基侵蚀（GloBE）规则立法模板使用范围内的比亚迪集团，其主要境内分、子公司的法定企业所得税税率是多少？",
+      "gold_answers_head": [
+        "25%",
+        "百分之二十五",
+        "25 percent"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_458",
+        "chunk_379"
+      ],
+      "pred_answer": "25%",
+      "pred_chunk_ids": [
+        "chunk_379",
+        "chunk_458",
+        "chunk_459",
+        "chunk_457",
+        "chunk_2149"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9710178375244141,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000042",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年年度报告中，长城汽车股份有限公司与福耀玻璃工业集团股份有限公司相比，哪家公司对房屋及建筑物类固定资产设定的年折旧率上限更高？",
+      "gold_answers_head": [
+        "长城汽车股份有限公司",
+        "长城汽车",
+        "长城股份"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2702",
+        "chunk_2111"
+      ],
+      "pred_answer": "文中未提及长城汽车股份有限公司",
+      "pred_chunk_ids": [
+        "chunk_2288",
+        "chunk_2134",
+        "chunk_1858",
+        "chunk_2246",
+        "chunk_2133"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 1.0499439239501953,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000043",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "在福耀玻璃工业集团股份有限公司的子公司中，由福耀玻璃持股75%且享受高新技术企业15%优惠税率的子公司，其该优惠税率的到期年度是哪一年？",
+      "gold_answers_head": [
+        "2025年",
+        "2025",
+        "二零二五年"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2251",
+        "chunk_2133"
+      ],
+      "pred_answer": "2025 年度",
+      "pred_chunk_ids": [
+        "chunk_2133",
+        "chunk_2141",
+        "chunk_2142",
+        "chunk_2137",
+        "chunk_2135"
+      ],
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9670417308807373,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000044",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "截至2025年12月31日，福耀玻璃账龄超过一年的其他应付款余额与账龄超过一年的应付账款金额相比，哪一项更高？",
+      "gold_answers_head": [
+        "账龄超过一年的其他应付款余额",
+        "1年以上其他应付款",
+        "账龄1年以上的其他应付款"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2208",
+        "chunk_2203"
+      ],
+      "pred_answer": "账龄超过一年的应付账款",
+      "pred_chunk_ids": [
+        "chunk_2161",
+        "chunk_2203",
+        "chunk_2064",
+        "chunk_2282",
+        "chunk_2284"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.095557689666748,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000045",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在惠州市德赛西威汽车电子股份有限公司2025年度财务报告中，合并资产负债表中的股本总额与母公司所有者权益变动表中的本期期末股本余额相比，哪一个数值更大？",
+      "gold_answers_head": [
+        "合并资产负债表中的股本总额",
+        "合并报表股本总额",
+        "合并股本总额"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1634",
+        "chunk_1610"
+      ],
+      "pred_answer": "合并资产负债表中的股本总额",
+      "pred_chunk_ids": [
+        "chunk_1610",
+        "chunk_1641",
+        "chunk_1637",
+        "chunk_1625",
+        "chunk_1639"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.144749402999878,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000046",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "比亚迪股份有限公司2025年第二次临时股东会的法律意见书出具日期与2024年度股东会的法律意见书披露日期相比，哪一个更晚？",
+      "gold_answers_head": [
+        "2025年第二次临时股东会的法律意见书出具日期",
+        "2025年第二次临时股东大会法律意见书日期",
+        "2025年第二次临股会法律意见书出具日"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_262",
+        "chunk_251"
+      ],
+      "pred_answer": "2024 年度股东会的法律意见书披露日期",
+      "pred_chunk_ids": [
+        "chunk_251",
+        "chunk_274",
+        "chunk_132",
+        "chunk_267",
+        "chunk_262"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.070180892944336,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000047",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "截至2025年12月31日，持有宁德时代22.45%股份的控股股东在前10名无限售条件股东中报告期末持有的股份数量是多少？",
+      "gold_answers_head": [
+        "1,024,704,949股",
+        "1024704949股",
+        "10.247亿股"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1384",
+        "chunk_1170"
+      ],
+      "pred_answer": "1,024,704,949",
+      "pred_chunk_ids": [
+        "chunk_1170",
+        "chunk_1167",
+        "chunk_1141",
+        "chunk_1143",
+        "chunk_1038"
+      ],
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.1357471942901611,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000048",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "根据2025年年度报告，行使原《公司法》规定的监事会职权的机构在当年共召开了几次会议？",
+      "gold_answers_head": [
+        "11次",
+        "11 次",
+        "十一次"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2409",
+        "chunk_2544"
+      ],
+      "pred_answer": "11",
+      "pred_chunk_ids": [
+        "chunk_135",
+        "chunk_2544",
+        "chunk_1941",
+        "chunk_2432",
+        "chunk_635"
+      ],
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.8427557945251465,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000049",
+      "subset": "3hop_comparison",
+      "hop_count": 3,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在长城汽车股份有限公司2025年度报告中，行使原《公司法》规定的监事会职权的机构召开的会议次数与董事会召开的会议次数相比，哪个更多？",
+      "gold_answers_head": [
+        "董事会",
+        "董事會",
+        "Board of Directors"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2409",
+        "chunk_2544",
+        "chunk_2530"
+      ],
+      "pred_answer": "董事会",
+      "pred_chunk_ids": [
+        "chunk_2530",
+        "chunk_2544",
+        "chunk_2432",
+        "chunk_2392",
+        "chunk_2546"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.0004546642303467,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000050",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在重庆长安汽车股份有限公司2025年年度报告中，对关联方“南方英特空调有限公司”的期末账面余额与对“哈尔滨东安汽车动力股份有限公司”的期末账面余额相比，哪一方的金额更高？",
+      "gold_answers_head": [
+        "南方英特空调有限公司",
+        "南方英特空调",
+        "南方英特"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_942",
+        "chunk_936"
+      ],
+      "pred_answer": "南方英特空调有限公司",
+      "pred_chunk_ids": [
+        "chunk_942",
+        "chunk_936",
+        "chunk_909",
+        "chunk_962",
+        "chunk_950"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.0098719596862793,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000051",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "比亚迪审议通过《关于授权公司管理层制定<市值管理制度>的议案》的日期与审议通过《关于公司行使一般性授权在香港联合交易所有限公司主板配售股份的议案》的日期相比，哪一天更早？",
+      "gold_answers_head": [
+        "2024-12-26",
+        "2024/12/26",
+        "2024.12.26"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_128",
+        "chunk_275"
+      ],
+      "pred_answer": "无法回答",
+      "pred_chunk_ids": [
+        "chunk_275",
+        "chunk_268",
+        "chunk_274",
+        "chunk_264",
+        "chunk_280"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9701414108276367,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000052",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "比亚迪第八届董事会第十六次会议审议通过《关于制定<市值管理制度>的议案》的日期，与重庆长安汽车股份有限公司第九届董事会第四十次会议审议通过同类议案的日期相比，哪一家公司的会议日期更早？",
+      "gold_answers_head": [
+        "比亚迪",
+        "BYD",
+        "比亚迪汽车"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_128",
+        "chunk_608"
+      ],
+      "pred_answer": "信息不足无法判断",
+      "pred_chunk_ids": [
+        "chunk_608",
+        "chunk_651",
+        "chunk_607",
+        "chunk_647",
+        "chunk_638"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9513955116271973,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000053",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "截至2025年报告期末，重庆长安汽车股份有限公司与长城汽车相比，哪家公司的可随时用于支付的银行存款余额更高？",
+      "gold_answers_head": [
+        "重庆长安汽车股份有限公司",
+        "长安汽车",
+        "长安汽车股份有限公司"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_877",
+        "chunk_2855"
+      ],
+      "pred_answer": "上下文未提供相关信息",
+      "pred_chunk_ids": [
+        "chunk_939",
+        "chunk_950",
+        "chunk_942",
+        "chunk_2855",
+        "chunk_861"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9702591896057129,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000054",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "2025年，长城汽车新能源车型的全球销量同比增长率与全球新能源车整体销量的同比增长率相比，哪一个更高？",
+      "gold_answers_head": [
+        "长城汽车新能源车型的全球销量同比增长率",
+        "长城新能源全球销量同比增速",
+        "GWM NEV global sales YoY growth rate"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_995",
+        "chunk_2326"
+      ],
+      "pred_answer": "长城汽车新能源车型全球销量同比增长率",
+      "pred_chunk_ids": [
+        "chunk_2326",
+        "chunk_2343",
+        "chunk_2356",
+        "chunk_2344",
+        "chunk_996"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.4619207382202148,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000055",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "在比亚迪于2025年5月6日发布关于员工持股计划实施进展公告的背景下，该计划通过二级市场购买股票的成交均价约为多少元/股？",
+      "gold_answers_head": [
+        "372.18元/股",
+        "372.18 CNY/share",
+        "372.18 RMB/share"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_248",
+        "chunk_133"
+      ],
+      "pred_answer": "372.18",
+      "pred_chunk_ids": [
+        "chunk_500",
+        "chunk_133",
+        "chunk_502",
+        "chunk_177",
+        "chunk_2509"
+      ],
+      "em": 0.0,
+      "f1": 0.6666666666666666,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9809885025024414,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000056",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "比亚迪2025年年度报告中，其基本每股收益的数值与向全体股东每10股派发的现金红利金额（元）是否一致？若一致，该数值是多少？",
+      "gold_answers_head": [
+        "一致，3.58元",
+        "一致，¥3.58",
+        "一致，RMB 3.58"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_308",
+        "chunk_7"
+      ],
+      "pred_answer": "不一致",
+      "pred_chunk_ids": [
+        "chunk_7",
+        "chunk_142",
+        "chunk_175",
+        "chunk_274",
+        "chunk_280"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.846038818359375,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000057",
+      "subset": "3hop_comparison",
+      "hop_count": 3,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在比亚迪2025年年度报告中，其向全体股东每10股派发的现金红利金额（元）与扣除非经常性损益后归属于母公司普通股股东的基本每股收益（元/股）相比，哪个数值更高？",
+      "gold_answers_head": [
+        "向全体股东每10股派发的现金红利金额",
+        "每10股派现金额",
+        "10股派息额"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_308",
+        "chunk_7",
+        "chunk_526"
+      ],
+      "pred_answer": "每10股派发的现金红利金额",
+      "pred_chunk_ids": [
+        "chunk_274",
+        "chunk_142",
+        "chunk_526",
+        "chunk_7",
+        "chunk_175"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9760589599609375,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000058",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "在福耀玻璃2025年年度报告中，那家于2011年12月1日完成营业执照变更的合营企业，其宣告发放的现金股利或利润金额是多少？",
+      "gold_answers_head": [
+        "7,350,000元",
+        "735万元",
+        "735万"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2254",
+        "chunk_2290"
+      ],
+      "pred_answer": "文中未提及",
+      "pred_chunk_ids": [
+        "chunk_2280",
+        "chunk_1847",
+        "chunk_1914",
+        "chunk_1999",
+        "chunk_1880"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 0.956096887588501,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000059",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年年度报告中，长城汽车与重庆长安汽车相比，哪家公司计入当期损益的政府补助（排除与正常经营业务密切相关部分）金额更高？",
+      "gold_answers_head": [
+        "长城汽车",
+        "Great Wall Motor",
+        "GWM"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_968",
+        "chunk_2322"
+      ],
+      "pred_answer": "长城汽车",
+      "pred_chunk_ids": [
+        "chunk_890",
+        "chunk_942",
+        "chunk_2978",
+        "chunk_891",
+        "chunk_589"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 0.992358922958374,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000060",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "惠州市德赛西威汽车电子股份有限公司与福耀玻璃工业集团股份有限公司，哪一家公司的2025年年度财务报表批准报出日期更晚？",
+      "gold_answers_head": [
+        "福耀玻璃工业集团股份有限公司",
+        "福耀集团",
+        "福耀玻璃"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1642",
+        "chunk_2091"
+      ],
+      "pred_answer": "无法回答",
+      "pred_chunk_ids": [
+        "chunk_1845",
+        "chunk_1856",
+        "chunk_1863",
+        "chunk_1709",
+        "chunk_2137"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 1.4128758907318115,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000061",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年年度报告中，重庆长安汽车股份有限公司与惠州市德赛西威汽车电子股份有限公司相比，哪家公司在“处置固定资产、无形资产和其他长期资产的损失（收益以“－”号填列）”这一项上记录的金额更高（即数值更大，考虑正负号）？",
+      "gold_answers_head": [
+        "惠州市德赛西威汽车电子股份有限公司",
+        "德赛西威",
+        "惠州德赛西威"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_875",
+        "chunk_1785"
+      ],
+      "pred_answer": "惠州市德赛西威汽车电子股份有限公司",
+      "pred_chunk_ids": [
+        "chunk_875",
+        "chunk_1616",
+        "chunk_1612",
+        "chunk_1778",
+        "chunk_838"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.1404767036437988,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000062",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "比亚迪监事会2024年度工作报告的披露日期与截至2024年12月31日止年度的H股红股公告发布日相比，哪一个更早？",
+      "gold_answers_head": [
+        "比亚迪监事会2024年度工作报告的披露日期",
+        "BYD Supervisory Board 2024 Annual Work Report disclosure date",
+        "比亚迪2024年监事会工作报告公告日"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_240",
+        "chunk_247"
+      ],
+      "pred_answer": "文中未提供相关日期",
+      "pred_chunk_ids": [
+        "chunk_275",
+        "chunk_271",
+        "chunk_245",
+        "chunk_251",
+        "chunk_261"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 0.9348056316375732,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000063",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "宁德时代在2025年9月4日审议通过的关于2022年激励计划的议案中，涉及的是第几个归属期和行权期？截至2025年12月31日，该期股票期权的实际行权数量是多少？",
+      "gold_answers_head": [
+        "630,062股",
+        "630062股",
+        "630,062 shares"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1086",
+        "chunk_1099"
+      ],
+      "pred_answer": "文中未提及 2025 年 9 月 4 日审议的议案；第三个归属期、第三个行权期；630,062 股",
+      "pred_chunk_ids": [
+        "chunk_1099",
+        "chunk_1095",
+        "chunk_1097",
+        "chunk_1098",
+        "chunk_1162"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.2533705234527588,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000064",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "宁德时代在2025年10月17日审议通过相关议案的激励计划中，第四个归属期实际可归属的限制性股票数量是多少？",
+      "gold_answers_head": [
+        "300,382股",
+        "300382股",
+        "30.0382万股"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1086",
+        "chunk_1095"
+      ],
+      "pred_answer": "300,382 股",
+      "pred_chunk_ids": [
+        "chunk_1095",
+        "chunk_1099",
+        "chunk_1098",
+        "chunk_1164",
+        "chunk_1097"
+      ],
+      "em": 0.0,
+      "f1": 0.5,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.0594055652618408,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000065",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "宁德时代在2025年10月17日审议通过相关议案的激励计划中，其第四个行权期符合行权条件的激励对象实际人数是多少？",
+      "gold_answers_head": [
+        "186人",
+        "186 人",
+        "一百八十六人"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1086",
+        "chunk_1096"
+      ],
+      "pred_answer": "0",
+      "pred_chunk_ids": [
+        "chunk_1099",
+        "chunk_1095",
+        "chunk_1096",
+        "chunk_1098",
+        "chunk_1097"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.8956298828125,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000066",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在宁德时代2025年度合并所有者权益变动表中，2025年度期初归属于母公司所有者权益中的资本公积金额与2024年度归属于母公司所有者权益中的资本公积金额相比，哪一年的数值更高？",
+      "gold_answers_head": [
+        "2025年度",
+        "2025年",
+        "2025财年"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1215",
+        "chunk_1218"
+      ],
+      "pred_answer": "2025 年度",
+      "pred_chunk_ids": [
+        "chunk_1218",
+        "chunk_1215",
+        "chunk_1223",
+        "chunk_1221",
+        "chunk_1204"
+      ],
+      "em": 0.0,
+      "f1": 0.5,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.0498511791229248,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000067",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "福耀玻璃在入职培训中涵盖职业安全等方面，该集团为整合包括法规制度、管理知识等核心内容而搭建的线上学习平台名称是什么？",
+      "gold_answers_head": [
+        "“耀”学线上学习平台",
+        "耀学线上学习平台",
+        "耀学平台"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1993",
+        "chunk_1896"
+      ],
+      "pred_answer": "“耀”学",
+      "pred_chunk_ids": [
+        "chunk_1896",
+        "chunk_1993",
+        "chunk_1902",
+        "chunk_1891",
+        "chunk_1852"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.911968469619751,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000068",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "比亚迪股份有限公司发布的H股公告（临时股东会的出席回条）与第八届董事会第十八次会议决议公告，哪一个披露日期更早？",
+      "gold_answers_head": [
+        "H股公告（临时股东会的出席回条）",
+        "H股公告（临时股东大会出席回执）",
+        "H股公告（临股东会出席回条）"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_239",
+        "chunk_247"
+      ],
+      "pred_answer": "文中未提及",
+      "pred_chunk_ids": [
+        "chunk_275",
+        "chunk_235",
+        "chunk_261",
+        "chunk_238",
+        "chunk_276"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 0.8990218639373779,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000069",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在比亚迪2025年度财务报告中，筹资活动产生的现金流量净额与投资活动使用的现金流量净额相比，哪一项的绝对数值更大？",
+      "gold_answers_head": [
+        "投资活动使用的现金流量净额",
+        "投资活动产生的现金流量净额",
+        "投资活动现金净流量"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_328",
+        "chunk_316"
+      ],
+      "pred_answer": "投资活动使用的现金流量净额",
+      "pred_chunk_ids": [
+        "chunk_327",
+        "chunk_316",
+        "chunk_577",
+        "chunk_1029",
+        "chunk_462"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9406805038452148,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000070",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "比亚迪在2024年度利润分配方案与2025年年度利润分配预案中，哪一年的每10股派发现金红利金额更高？",
+      "gold_answers_head": [
+        "2024年度",
+        "2024年",
+        "2024财年"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_280",
+        "chunk_7"
+      ],
+      "pred_answer": "2024 年度",
+      "pred_chunk_ids": [
+        "chunk_264",
+        "chunk_280",
+        "chunk_274",
+        "chunk_7",
+        "chunk_609"
+      ],
+      "em": 0.0,
+      "f1": 0.5,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.927692174911499,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000071",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在比亚迪的利润分配方案中，2024年度股东会审议通过的每10股送红股数量与2025年董事会审议通过的预案中每10股送红股数量相比，哪一年的数值更高？",
+      "gold_answers_head": [
+        "2024年度",
+        "2024年",
+        "2024财年"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_280",
+        "chunk_7"
+      ],
+      "pred_answer": "2024 年度",
+      "pred_chunk_ids": [
+        "chunk_280",
+        "chunk_271",
+        "chunk_175",
+        "chunk_274",
+        "chunk_264"
+      ],
+      "em": 0.0,
+      "f1": 0.5,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9683723449707031,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000072",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "比亚迪2024年度股东会审议通过利润分配及资本公积金转增股本方案的日期，与该次会议法律意见书的披露日期相比，哪一个更早？",
+      "gold_answers_head": [
+        "比亚迪2024年度股东会审议通过利润分配及资本公积金转增股本方案的日期",
+        "BYD 2024 Annual General Meeting approval date for profit distribution and capital reserve conversion",
+        "比亚迪2024年股东大会通过分红及转增股本方案的日期"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_280",
+        "chunk_251"
+      ],
+      "pred_answer": "2024 年度股东会审议通过日期",
+      "pred_chunk_ids": [
+        "chunk_132",
+        "chunk_274",
+        "chunk_269",
+        "chunk_264",
+        "chunk_174"
+      ],
+      "em": 0.0,
+      "f1": 0.16666666666666669,
+      "hit_at_k": 0.0,
+      "latency_sec": 0.9459264278411865,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000073",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在惠州市德赛西威汽车电子股份有限公司的财务报告中，购买日之前持有的作为权益法核算的长期股权投资，其公允价值与账面价值的差额计入的科目，与原持有的其他权益工具投资改按权益法核算时其公允价值与账面价值差额计入的科目是否相同？如果不同，前者计入什么科目？",
+      "gold_answers_head": [
+        "不同，计入当期投资收益",
+        "计入当期投资收益",
+        "确认为当期投资收益"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1653",
+        "chunk_1674"
+      ],
+      "pred_answer": "不同，计入当期投资收益",
+      "pred_chunk_ids": [
+        "chunk_1674",
+        "chunk_1653",
+        "chunk_1689",
+        "chunk_1673",
+        "chunk_1251"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.8989913463592529,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000074",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "在比亚迪股份有限公司2025年年度报告中，从公司获得税前报酬总额最高的现任高管期末持有多少股高管锁定股？",
+      "gold_answers_head": [
+        "24,438,150股",
+        "24438150股",
+        "24,438,150 shares"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_162",
+        "chunk_273"
+      ],
+      "pred_answer": "文中未提及",
+      "pred_chunk_ids": [
+        "chunk_267",
+        "chunk_274",
+        "chunk_134",
+        "chunk_500",
+        "chunk_177"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 0.9082236289978027,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000075",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年年度报告中，长城汽车与重庆长安汽车相比，哪家公司的期末现金及现金等价物余额更高？",
+      "gold_answers_head": [
+        "长城汽车",
+        "Great Wall Motor",
+        "GWM"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2854",
+        "chunk_730"
+      ],
+      "pred_answer": "文中未提及长城汽车",
+      "pred_chunk_ids": [
+        "chunk_965",
+        "chunk_950",
+        "chunk_942",
+        "chunk_838",
+        "chunk_851"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 1.0348620414733887,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000076",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在宁德时代2025年期末财务报告中，账龄在1年以内（含1年）的应收账款账面余额与其他应收款账面余额相比，哪一项更高？",
+      "gold_answers_head": [
+        "其他应收款",
+        "Other Receivables",
+        "其它应收款"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1295",
+        "chunk_1405"
+      ],
+      "pred_answer": "应收账款账面余额",
+      "pred_chunk_ids": [
+        "chunk_1295",
+        "chunk_1303",
+        "chunk_1304",
+        "chunk_1333",
+        "chunk_1301"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.0631287097930908,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000077",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "宁德时代2025年度利润分配预案中拟向全体股东每10股派发的现金分红金额，与该公司2024年度实际实施的每10股现金分红金额相比，哪一年的金额更高？",
+      "gold_answers_head": [
+        "2025年度",
+        "2025年",
+        "2025财年"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_977",
+        "chunk_1089"
+      ],
+      "pred_answer": "2025 年度",
+      "pred_chunk_ids": [
+        "chunk_1089",
+        "chunk_1093",
+        "chunk_1091",
+        "chunk_977",
+        "chunk_975"
+      ],
+      "em": 0.0,
+      "f1": 0.5,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.0039734840393066,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000078",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年度利润分配预案中，宁德时代与重庆长安汽车在现金分红力度（每10股派现金额）上哪家更高？",
+      "gold_answers_head": [
+        "宁德时代",
+        "CATL",
+        "宁德新能源"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_977",
+        "chunk_528"
+      ],
+      "pred_answer": "宁德时代",
+      "pred_chunk_ids": [
+        "chunk_1089",
+        "chunk_975",
+        "chunk_1091",
+        "chunk_643",
+        "chunk_1093"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 1.03041410446167,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000079",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "2025年度，汇率变动对惠州市德赛西威汽车电子股份有限公司现金及现金等价物的影响金额与对长城汽车的影响金额相比，哪家公司的受影响金额更高？",
+      "gold_answers_head": [
+        "惠州市德赛西威汽车电子股份有限公司",
+        "德赛西威",
+        "SVAuto"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1621",
+        "chunk_2647"
+      ],
+      "pred_answer": "惠州市德赛西威汽车电子股份有限公司",
+      "pred_chunk_ids": [
+        "chunk_1621",
+        "chunk_1625",
+        "chunk_2647",
+        "chunk_1790",
+        "chunk_2880"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.1423993110656738,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000080",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年报告期内，长城汽车与重庆长安汽车的董事会审计委员会，哪一家召开的会议次数更多？",
+      "gold_answers_head": [
+        "长城汽车",
+        "Great Wall Motor",
+        "GWM"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2544",
+        "chunk_634"
+      ],
+      "pred_answer": "长城汽车",
+      "pred_chunk_ids": [
+        "chunk_2544",
+        "chunk_2432",
+        "chunk_634",
+        "chunk_2300",
+        "chunk_2392"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.1201839447021484,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000081",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在惠州市德赛西威汽车电子股份有限公司2025年度财务报告中，经营活动产生的现金流量净额与筹资活动产生的现金流量净额相比，哪一项数值更大？",
+      "gold_answers_head": [
+        "筹资活动产生的现金流量净额",
+        "Net Cash Flows from Financing Activities",
+        "筹资活动现金流净额"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1621",
+        "chunk_1786"
+      ],
+      "pred_answer": "筹资活动产生的现金流量净额",
+      "pred_chunk_ids": [
+        "chunk_577",
+        "chunk_1474",
+        "chunk_1625",
+        "chunk_1786",
+        "chunk_1621"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.029639720916748,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000082",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "惠州市德赛西威汽车电子股份有限公司现任法定代表人的董事任期终止于哪一天？",
+      "gold_answers_head": [
+        "2027-06-02",
+        "2027/06/02",
+        "2027.06.02"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1429",
+        "chunk_1499"
+      ],
+      "pred_answer": "2027 年 06 月 02 日",
+      "pred_chunk_ids": [
+        "chunk_1501",
+        "chunk_1500",
+        "chunk_1505",
+        "chunk_1503",
+        "chunk_1504"
+      ],
+      "em": 0.0,
+      "f1": 0.2222222222222222,
+      "hit_at_k": 0.0,
+      "latency_sec": 1.4159157276153564,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000083",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "福耀玻璃2025年年度报告中披露的公司负责人与本公司副总经理何世猛先生是什么亲属关系？",
+      "gold_answers_head": [
+        "妻兄",
+        "大舅子",
+        "内兄"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2072",
+        "chunk_1942"
+      ],
+      "pred_answer": "妹夫",
+      "pred_chunk_ids": [
+        "chunk_1845",
+        "chunk_1942",
+        "chunk_1974",
+        "chunk_2044",
+        "chunk_1952"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.237027883529663,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000084",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "长城汽车2025年员工持股计划与2023年第二期员工持股计划在关于公司董事参与资格的排除性规定上是否一致？",
+      "gold_answers_head": [
+        "是",
+        "Yes",
+        "Y"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2505",
+        "chunk_2498"
+      ],
+      "pred_answer": "是",
+      "pred_chunk_ids": [
+        "chunk_2498",
+        "chunk_2504",
+        "chunk_2491",
+        "chunk_2501",
+        "chunk_2509"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.8864963054656982,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000085",
+      "subset": "2hop_inference",
+      "hop_count": 2,
+      "qa_type": "inference",
+      "source": "multihop_export",
+      "question": "在2025年报告期内，那位应参加董事会次数为8次且现场出席1次的董事，其离任的具体原因是什么？",
+      "gold_answers_head": [
+        "公司治理结构调整",
+        "公司治理架构调整",
+        "治理结构优化"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1081",
+        "chunk_1063"
+      ],
+      "pred_answer": "工作变动",
+      "pred_chunk_ids": [
+        "chunk_1063",
+        "chunk_1502",
+        "chunk_618",
+        "chunk_164",
+        "chunk_1938"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.996758222579956,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000086",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年年度报告中，重庆长安汽车股份有限公司与福耀玻璃工业集团股份有限公司相比，哪家公司提取的法定盈余公积金额更高？",
+      "gold_answers_head": [
+        "重庆长安汽车股份有限公司",
+        "长安汽车",
+        "长安汽车股份"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_862",
+        "chunk_2218"
+      ],
+      "pred_answer": "文中未提及",
+      "pred_chunk_ids": [
+        "chunk_2288",
+        "chunk_2246",
+        "chunk_1856",
+        "chunk_2252",
+        "chunk_2134"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 0.0,
+      "latency_sec": 0.9957454204559326,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000087",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年年度报告中，宁德时代与福耀玻璃哪家公司披露的研发投入总额占营业收入的比例更高？",
+      "gold_answers_head": [
+        "宁德时代",
+        "CATL",
+        "宁德新能源"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1028",
+        "chunk_1911"
+      ],
+      "pred_answer": "宁德时代",
+      "pred_chunk_ids": [
+        "chunk_1028",
+        "chunk_1025",
+        "chunk_1912",
+        "chunk_1951",
+        "chunk_1856"
+      ],
+      "em": 1.0,
+      "f1": 1.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.9381580352783203,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000088",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年，宁德时代与比亚迪这两家企业中，哪一家公司的研发人员中拥有博士学历的人数更多？",
+      "gold_answers_head": [
+        "比亚迪",
+        "BYD",
+        "比亚迪股份有限公司"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_1028",
+        "chunk_93"
+      ],
+      "pred_answer": "宁德时代",
+      "pred_chunk_ids": [
+        "chunk_1028",
+        "chunk_993",
+        "chunk_1049",
+        "chunk_973",
+        "chunk_1139"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 0.8789379596710205,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000089",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "比亚迪披露《关于2022年员工持股计划股票出售完毕暨终止的公告》的日期，与披露2024年度股东会法律意见书的日期相比，哪一个更晚？",
+      "gold_answers_head": [
+        "披露《关于2022年员工持股计划股票出售完毕暨终止的公告》的日期",
+        "2022年员工持股计划股票出售完毕暨终止公告披露日",
+        "2022年员工持股计划售完终止公告发布日期"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_180",
+        "chunk_251"
+      ],
+      "pred_answer": "《关于2022年员工持股计划股票出售完毕暨终止的公告》",
+      "pred_chunk_ids": [
+        "chunk_251",
+        "chunk_132",
+        "chunk_180",
+        "chunk_499",
+        "chunk_246"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.1539413928985596,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000090",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "在2025年12月31日，长城汽车与比亚迪相比，哪家公司通过内部研发形成的无形资产占其无形资产余额的比例更高？",
+      "gold_answers_head": [
+        "长城汽车",
+        "Great Wall Motor",
+        "GWM"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2795",
+        "chunk_420"
+      ],
+      "pred_answer": "无法确定",
+      "pred_chunk_ids": [
+        "chunk_2955",
+        "chunk_2795",
+        "chunk_2342",
+        "chunk_2338",
+        "chunk_2940"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.899717092514038,
+      "tool_calls": 1
+    },
+    {
+      "id": "mhop_000091",
+      "subset": "2hop_comparison",
+      "hop_count": 2,
+      "qa_type": "comparison",
+      "source": "multihop_export",
+      "question": "截至2025年12月31日，长城汽车与重庆长安汽车在“未办妥产权证书的土地使用权”这一事项上的披露情况有何共同点？",
+      "gold_answers_head": [
+        "均无未办妥产权证书的土地使用权",
+        "所有土地使用权均已取得产权证书",
+        "土地使用权证齐全"
+      ],
+      "supporting_chunk_ids": [
+        "chunk_2795",
+        "chunk_838"
+      ],
+      "pred_answer": "无未办妥产权证书的土地使用权",
+      "pred_chunk_ids": [
+        "chunk_838",
+        "chunk_2795",
+        "chunk_2955",
+        "chunk_2392",
+        "chunk_2783"
+      ],
+      "em": 0.0,
+      "f1": 0.0,
+      "hit_at_k": 1.0,
+      "latency_sec": 1.0714023113250732,
+      "tool_calls": 1
+    }
+  ]
+}
